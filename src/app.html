@@ -4,9 +4,97 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="color-scheme" content="dark light" />
 		%sveltekit.head%
+
+		<style>
+			:root {
+				--bg-1: #ffffff;
+				--bg-2: #f9f9f9;
+				--fg-1: #000000;
+				--fg-2: #333333;
+				--accent: #ff0000;
+				--link: #0056b3;
+				--link-hover: #003d7a;
+				--border-radius: 4px;
+				--font: "Roboto", Arial, sans-serif;
+			}
+
+			body {
+				font-family: var(--font);
+				line-height: 1.5;
+				margin: 0;
+				padding: 0;
+				background-color: var(--bg-1);
+				color: var(--fg-1);
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-weight: bold;
+				margin-bottom: 0.5rem;
+			}
+
+			a {
+				color: var(--link);
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: var(--link-hover);
+				text-decoration: underline;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 1rem;
+			}
+
+			.header {
+				background-color: var(--accent);
+				color: white;
+				padding: 1rem 0;
+			}
+
+			.header h1 {
+				margin: 0;
+			}
+
+			.section {
+				margin-bottom: 2rem;
+				padding: 1rem;
+				background-color: var(--bg-2);
+				border-radius: var(--border-radius);
+			}
+
+			.section h2 {
+				color: var(--accent);
+				border-bottom: 2px solid var(--accent);
+				padding-bottom: 0.5rem;
+			}
+
+			button {
+				background-color: var(--accent);
+				color: white;
+				border: none;
+				padding: 0.5rem 1rem;
+				border-radius: var(--border-radius);
+				cursor: pointer;
+				font-weight: bold;
+			}
+
+			button:hover {
+				background-color: #cc0000;
+			}
+		</style>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
+		<script>
+			const theme = new URL(window.location).searchParams.get('theme');
+
+			document.body.classList.remove('light', 'dark');
+			document.body.classList.add(theme || 'dark');
+		</script>
 	</body>
 </html>

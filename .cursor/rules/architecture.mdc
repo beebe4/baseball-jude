@@ -1,0 +1,97 @@
+---
+description: When decided on new components or packages to use this should be referenced
+globs: *.svelte
+---
+# Baseball Recruitment Site Architecture
+
+## Project Overview
+A personal baseball recruitment website for Jude McDonald (Class of 2026) built with SvelteKit. The primary audience is college coaches looking for Right handed pitchers.
+
+## Key Design Decisions
+
+### 1. Visual Design
+- **Color Scheme**
+  - Primary: Red (var(--accent))
+  - Background: White (var(--bg-1))
+  - Secondary Background: Light Gray (var(--bg-2))
+  - Text: Black (var(--fg-1))
+  - Secondary Text: Dark Gray (var(--fg-2))
+  - Links: Blue (var(--link))
+
+- **Typography**
+  - Font Family: "Roboto", Arial, sans-serif
+  - Headings: Bold weight
+  - Base font size: 16px
+
+- **Layout**
+  - Max container width: 1200px
+  - Border radius: 4px (var(--border-radius))
+  - Section padding: 2rem
+  - Grid gaps: 1.5rem - 2rem
+
+### 2. Component Structure
+
+#### Hero Section
+- Full-width background image with overlay
+- Two-column layout on desktop
+- Centered content on mobile
+- CTA buttons with hover effects
+
+#### Stat Cards
+- Grid layout with auto-fit columns
+- Minimum width: 200px
+- Box shadow for depth
+- Centered content
+
+#### Achievement Cards
+- Three-column grid layout
+- Emoji icons
+- Hover animation
+- Box shadow for depth
+
+#### Contact Form
+- Maximum width: 400px
+- Required fields:
+  - College/University name
+  - Coach name
+  - Email
+  - Phone
+- Styled input fields with consistent padding
+
+### 3. Responsive Design Rules
+- Mobile breakpoint: 768px
+- Flex direction changes at breakpoint
+- Font size reduction on mobile
+- Full-width buttons on mobile
+- Grid adjustments using auto-fit
+
+### 4. Code Organization
+
+#### File Structure
+src/
+├── lib/
+│ └── components/
+│ └── ContactForm.svelte
+├── routes/
+│ ├── +page.svelte
+│ └── [college]/
+│ └── +page.svelte
+└── app.html
+static/
+└── images/
+├── baseball-hero.jpg
+├── perfect-game-logo.png
+└── twitter-logo.png
+
+
+
+### 5. Data Management
+- Contact form data handled locally
+- College-specific pages use URL parameters
+- External links open in new tabs with security attributes
+
+### 6. Accessibility Guidelines
+- All images require alt text
+- Forms use proper labels and ARIA attributes
+- Color contrast meets WCAG standards
+- Interactive elements are keyboard accessible
