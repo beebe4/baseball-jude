@@ -2,22 +2,46 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="color-scheme" content="dark light" />
+		<meta
+			name="description"
+			content="Jude McDonald - Class of 2026 Right-handed pitcher. Episcopal School of Jacksonville baseball player with a 3.9 GPA."
+		/>
+		<meta
+			name="keywords"
+			content="baseball, pitcher, high school baseball, college recruitment, Episcopal School of Jacksonville"
+		/>
+		<meta name="author" content="Jude McDonald" />
+
+		<!-- Favicon and App Icons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<!-- Theme Color -->
+		<meta name="theme-color" content="#7bb8b1" />
+		<meta name="color-scheme" content="light dark" />
+
+		<!-- PWA Status Bar (iOS) -->
+		<meta name="apple-mobile-web-app-status-bar" content="#7bb8b1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
 		%sveltekit.head%
 
 		<style>
 			:root {
-				--bg-1: #ffffff;
-				--bg-2: #f9f9f9;
+				--bg-1: #f7f7ef;
+				--bg-2: #f7f7ef;
 				--fg-1: #000000;
 				--fg-2: #333333;
-				--accent: #ff0000;
-				--link: #0056b3;
-				--link-hover: #003d7a;
+				--accent: #7bb8b1;
+				--accent-2: #5aa69d;
+				--accent-3: #9ccac5;
+				--link: #7bb8b1;
+				--link-hover: #5aa69d;
 				--border-radius: 4px;
-				--font: "Roboto", Arial, sans-serif;
+				--font: 'Roboto', Arial, sans-serif;
 			}
 
 			body {
@@ -29,7 +53,12 @@
 				color: var(--fg-1);
 			}
 
-			h1, h2, h3, h4, h5, h6 {
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
 				font-weight: bold;
 				margin-bottom: 0.5rem;
 			}
@@ -84,7 +113,7 @@
 			}
 
 			button:hover {
-				background-color: #cc0000;
+				background-color: var(--accent-2);
 			}
 		</style>
 	</head>

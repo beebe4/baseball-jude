@@ -2,10 +2,35 @@
 	import ContactForm from '$lib/components/ContactForm.svelte';
 </script>
 
+<svelte:head>
+	<title>Jude McDonald - Baseball Class of 2026</title>
+	<meta property="og:title" content="Jude McDonald - Baseball Class of 2026" />
+	<meta property="og:type" content="profile" />
+	<meta property="og:url" content="https://judebaseball.com" />
+	<meta property="og:image" content="https://judebaseball.com/images/jude-pitching.jpeg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta
+		property="og:description"
+		content="Right-handed pitcher (Class of 2026) at Episcopal School of Jacksonville. 6'3&quot; pitcher combining power, precision, and academic excellence with a 3.9 GPA."
+	/>
+	<meta property="og:site_name" content="Jude McDonald Baseball" />
+
+	<!-- Twitter Card tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@jude_mcdonald7" />
+	<meta name="twitter:title" content="Jude McDonald - Baseball Class of 2026" />
+	<meta
+		name="twitter:description"
+		content="Right-handed pitcher (Class of 2026) at Episcopal School of Jacksonville. 6'3&quot; pitcher combining power, precision, and academic excellence with a 3.9 GPA."
+	/>
+	<meta name="twitter:image" content="https://judebaseball.com/images/jude-pitching.jpeg" />
+</svelte:head>
+
 <div class="hero min-h-screen bg-base-200">
 	<div class="hero-content flex-col lg:flex-row-reverse">
 		<img
-			src="https://09d1d85a2275582e9dad-7b3e649a230e2ba2cff912d8af17e0b5.ssl.cf1.rackcdn.com/8323618.jpeg"
+			src="/images/jude-pitching.jpeg"
 			class="max-w-sm rounded-lg shadow-2xl"
 			alt="Jude McDonald pitching"
 		/>
@@ -144,10 +169,8 @@
 
 <style>
 	.hero {
-		background:
-			linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-			url('/images/baseball-hero.jpg') center/cover;
-		color: white;
+		background: linear-gradient(var(--bg-1), var(--bg-2));
+		color: var(--fg-1);
 		padding: 6rem 0;
 		margin-bottom: 2rem;
 	}
@@ -192,8 +215,8 @@
 
 	.secondary {
 		background-color: transparent;
-		border: 2px solid white;
-		color: white;
+		border: 2px solid var(--fg-1);
+		color: var(--fg-1);
 	}
 
 	.stats-grid {
