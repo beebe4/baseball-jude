@@ -208,11 +208,11 @@
 		color: white;
 	}
 
-	.secondary {
+	/* .secondary {
 		background-color: transparent;
 		border: 2px solid var(--fg-1);
 		color: var(--fg-1);
-	}
+	} */
 
 	.stats-grid {
 		display: grid;

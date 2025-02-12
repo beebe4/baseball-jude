@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import ContactForm from '$lib/components/ContactForm.svelte';
+	// import ContactForm from '$lib/components/ContactForm.svelte';
 	import { CollegeService } from '$lib/services/collegeService';
 
 	const urlCollege = $page.params.college;
@@ -80,19 +80,24 @@
 			},
 			velocity: '84-86 mph',
 			topVelo: '87 mph',
-			pitches: ['4-Seam FB', '2-Seam FB', 'Changeup', 'Curveball']
+			pitches: ['2-Seam FB', 'Changeup', 'Slider']
 		}
-	};
-
-	const videoHighlights = {
-		pitching: 'https://www.youtube.com/embed/YOUR_PITCHING_VIDEO_ID',
-		batting: 'https://www.youtube.com/embed/YOUR_BATTING_VIDEO_ID',
-		fielding: 'https://www.youtube.com/embed/YOUR_FIELDING_VIDEO_ID'
 	};
 </script>
 
 <svelte:head>
 	<title>{collegeName} Baseball - Jude McDonald</title>
+	<meta
+		property="og:title"
+		content="Baseball Recruiting Profile - Jude McDonald for {collegeName}"
+	/>
+	<meta
+		property="og:description"
+		content="6'3&quot; RHP with 87mph fastball and 3.9 GPA interested in {collegeName}'s baseball program. Class of 2026 from Jacksonville, FL."
+	/>
+	<meta property="og:image" content="/images/jude-pitching.jpeg" />
+	<meta property="og:type" content="profile" />
+	<meta property="og:url" content={$page.url.href} />
 </svelte:head>
 
 <div class="hero">
@@ -176,25 +181,8 @@
 					</video>
 				</div>
 				<div class="video-details">
-					<p>Featuring: 87mph Fastball, Curveball, Changeup</p>
-					<p>Spring 2024</p>
-				</div>
-			</div>
-
-			<div class="video-card">
-				<h3>Game Footage</h3>
-				<div class="video-wrapper">
-					<iframe
-						src={videoHighlights.batting}
-						title="Game Highlights"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					></iframe>
-				</div>
-				<div class="video-details">
-					<p>Complete game highlights vs. rival team</p>
-					<p>March 2024</p>
+					<p>Featuring: 86.6mph 2-Seam Fastball Strikeout</p>
+					<p>February 11, 2025</p>
 				</div>
 			</div>
 		</div>
@@ -207,7 +195,7 @@
 				<span class="card-icon">🎓</span>
 				<h3>Academic Excellence</h3>
 				<p>
-					Your institution's commitment to academic excellence aligns perfectly with my 3.9 GPA and
+					{collegeName}'s commitment to academic excellence aligns perfectly with my 3.9 GPA and
 					dedication to both athletic and academic achievement.
 				</p>
 			</div>
@@ -215,7 +203,7 @@
 				<span class="card-icon">⚾</span>
 				<h3>Baseball Program</h3>
 				<p>
-					Your program's reputation for developing pitchers and competing at a high level makes it
+					{collegeName}'s reputation for developing pitchers and competing at a high level makes it
 					an ideal environment for my continued growth.
 				</p>
 			</div>
@@ -223,7 +211,7 @@
 				<span class="card-icon">🏆</span>
 				<h3>Winning Culture</h3>
 				<p>
-					I admire your program's winning tradition and would be honored to contribute to your
+					I admire {collegeName}'s winning tradition and would be honored to contribute to your
 					continued success.
 				</p>
 			</div>
@@ -358,7 +346,7 @@
 		text-align: center;
 	}
 
-	.contact-section {
+	/* .contact-section {
 		text-align: center;
 		max-width: 600px;
 		margin: 0 auto;
@@ -370,7 +358,7 @@
 		max-width: 500px;
 		margin-left: auto;
 		margin-right: auto;
-	}
+	} */
 
 	@media (max-width: 768px) {
 		.hero-grid {
