@@ -40,8 +40,8 @@
 			<h3 class="text-xl font-bold">Episcopal School of Jacksonville</h3>
 			<p class="py-6">Dedicated athlete combining power, precision, and academic excellence</p>
 			<div class="cta-buttons">
-				<a href="#highlights" class="cta-button primary">Watch Highlights</a>
-				<a href="#contact" class="cta-button secondary">Contact Me</a>
+				<a href="#highlights" class="cta-button primary">Watch Me In Action</a>
+				<!-- <a href="#contact" class="cta-button secondary">Contact Me</a> -->
 			</div>
 		</div>
 	</div>
@@ -122,17 +122,12 @@
 
 	<section id="highlights" class="section">
 		<h2>Game Highlights</h2>
-		<div class="video-container" style="display: flex; justify-content: center;">
-			<iframe
-				width="560"
-				height="315"
-				src="https://www.youtube.com/embed/63YzAByh1_E?si=n_9SC90Ad7TJUHnH"
-				title="YouTube video player"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin"
-				allowfullscreen
-			></iframe>
+		<div class="video-container">
+			<!-- svelte-ignore a11y-media-has-caption -->
+			<video controls preload="metadata" class="highlight-video">
+				<source src="/videos/Jude-86.mp4" type="video/mp4" />
+				Your browser does not support the video tag.
+			</video>
 		</div>
 	</section>
 
@@ -162,9 +157,9 @@
 		</div>
 	</section>
 
-	<section id="contact" class="section" style="display: flex; justify-content: center;">
+	<!-- <section id="contact" class="section" style="display: flex; justify-content: center;">
 		<ContactForm />
-	</section>
+	</section> -->
 </main>
 
 <style>
@@ -336,5 +331,19 @@
 
 	.introduction-content li {
 		margin-bottom: 0.5rem;
+	}
+
+	.video-container {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.highlight-video {
+		width: 100%;
+		border-radius: var(--border-radius);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	}
 </style>

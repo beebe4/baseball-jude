@@ -2,7 +2,6 @@
 	import { page } from '$app/stores';
 	import ContactForm from '$lib/components/ContactForm.svelte';
 	import { CollegeService } from '$lib/services/collegeService';
-	import axios from 'axios';
 
 	const urlCollege = $page.params.college;
 	let logo = '/images/default-college.png'; // Default logo
@@ -84,6 +83,12 @@
 			pitches: ['4-Seam FB', '2-Seam FB', 'Changeup', 'Curveball']
 		}
 	};
+
+	const videoHighlights = {
+		pitching: 'https://www.youtube.com/embed/YOUR_PITCHING_VIDEO_ID',
+		batting: 'https://www.youtube.com/embed/YOUR_BATTING_VIDEO_ID',
+		fielding: 'https://www.youtube.com/embed/YOUR_FIELDING_VIDEO_ID'
+	};
 </script>
 
 <svelte:head>
@@ -92,14 +97,21 @@
 
 <div class="hero">
 	<div class="hero-content">
-		<div class="college-info">
-			<img src={logo} alt="{collegeName} logo" class="college-logo" />
-			<h1>Hey {collegeName}!</h1>
-			<p class="intro-text">
-				I'm excited about the possibility of contributing to your baseball program. As a 6'3"
-				right-handed pitcher with a strong academic record, I believe I could be a valuable addition
-				to your team.
-			</p>
+		<div class="hero-grid">
+			<div class="hero-text">
+				<div class="college-branding">
+					<img src={logo} alt="{collegeName} logo" class="college-logo" />
+					<h1>Hey {collegeName}!</h1>
+				</div>
+				<p class="intro-text">
+					I'm Jude McDonald, a 6'3" right-handed pitcher from Jacksonville, Florida. With an 87 mph
+					fastball and a 3.9 GPA, I'm excited about the possibility of contributing to your program
+					both on the field and in the classroom.
+				</p>
+			</div>
+			<div class="hero-image">
+				<img src="/images/jude-pitching.jpeg" alt="Jude McDonald pitching" class="player-image" />
+			</div>
 		</div>
 	</div>
 </div>
@@ -147,6 +159,43 @@
 					<li>SLG: {baseballStats.batting.slg}</li>
 					<li>OPS: {baseballStats.batting.ops}</li>
 				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="section video-section">
+		<h2>Highlights</h2>
+		<div class="video-grid">
+			<div class="video-card">
+				<h3>Pitching Highlights</h3>
+				<div class="video-wrapper">
+					<!-- svelte-ignore a11y-media-has-caption -->
+					<video controls preload="metadata">
+						<source src="/videos/Jude-86.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<div class="video-details">
+					<p>Featuring: 87mph Fastball, Curveball, Changeup</p>
+					<p>Spring 2024</p>
+				</div>
+			</div>
+
+			<div class="video-card">
+				<h3>Game Footage</h3>
+				<div class="video-wrapper">
+					<iframe
+						src={videoHighlights.batting}
+						title="Game Highlights"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</div>
+				<div class="video-details">
+					<p>Complete game highlights vs. rival team</p>
+					<p>March 2024</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -213,14 +262,14 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- 
 	<section class="section contact-section">
 		<h2>Let's Connect</h2>
 		<p class="contact-intro">
 			I'd love to discuss how I could contribute to your program. Please feel free to reach out!
 		</p>
 		<ContactForm />
-	</section>
+	</section> -->
 </main>
 
 <style>
@@ -228,21 +277,42 @@
 		background-color: var(--accent);
 		color: white;
 		padding: 4rem 2rem;
-		text-align: center;
 	}
 
-	.hero-content {
-		max-width: 800px;
+	.hero-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		align-items: center;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
 
-	.college-logo {
-		max-width: 150px;
-		height: auto;
+	.hero-text {
+		text-align: left;
+	}
+
+	.college-branding {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
 		margin-bottom: 1.5rem;
-		border-radius: var(--border-radius);
+	}
+
+	.college-logo {
+		max-width: 80px;
+		height: auto;
 		background: white;
 		padding: 0.5rem;
+		border-radius: var(--border-radius);
+	}
+
+	.player-image {
+		width: 100%;
+		max-width: 500px;
+		height: auto;
+		border-radius: var(--border-radius);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	}
 
 	.intro-text {
@@ -292,22 +362,36 @@
 		text-align: center;
 		max-width: 600px;
 		margin: 0 auto;
+		padding: 2rem 1rem;
 	}
 
 	.contact-intro {
 		margin-bottom: 2rem;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	@media (max-width: 768px) {
-		.hero {
-			padding: 2rem 1rem;
-		}
-
-		.content-grid {
+		.hero-grid {
 			grid-template-columns: 1fr;
+			text-align: center;
 		}
 
-		.stats-grid {
+		.hero-text {
+			text-align: center;
+		}
+
+		.college-branding {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.player-image {
+			margin: 0 auto;
+		}
+
+		.video-grid {
 			grid-template-columns: 1fr;
 		}
 	}
@@ -353,5 +437,44 @@
 		position: absolute;
 		left: 0;
 		color: var(--accent);
+	}
+
+	.video-section {
+		background-color: var(--bg-2);
+		padding: 4rem 2rem;
+	}
+
+	.video-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.video-card {
+		background: white;
+		border-radius: var(--border-radius);
+		overflow: hidden;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	.video-wrapper {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+		height: 0;
+		overflow: hidden;
+	}
+
+	.video-wrapper video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.video-details {
+		padding: 1rem;
 	}
 </style>
