@@ -6,6 +6,8 @@
 	import Achievements from '$lib/components/Achievements.svelte';
 	import { CollegeService } from '$lib/services/collegeService';
 
+	export const prerender = 'auto';
+
 	const urlCollege = $page.params.slug;
 	let logo = '/images/default-college.png'; // Default logo
 	let collegeName = '';
