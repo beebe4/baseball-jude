@@ -37,9 +37,9 @@
 				er: '5',
 				bb: '10'
 			},
-			velocity: '86-89 mph',
-			topVelo: '89.7 mph',
-			pitches: ['2-Seam Fastball', 'Changeup', 'Slider']
+			fastballVelo: '87-89 mph',
+			sliderVelo: '72-75 mph',
+			changeupVelo: '77-80 mph'
 		}
 	};
 </script>
@@ -68,9 +68,9 @@
 		<div class="stat-card">
 			<h3>Arsenal</h3>
 			<ul class="stat-list">
-				<li>Fastball: {baseballStats.pitching.velocity}</li>
-				<li>Top Velocity: {baseballStats.pitching.topVelo}</li>
-				<li>Pitches: {baseballStats.pitching.pitches.join(', ')}</li>
+				<li>Fastball: {baseballStats.pitching.fastballVelo}</li>
+				<li>Slider: {baseballStats.pitching.sliderVelo}</li>
+				<li>Changeup: {baseballStats.pitching.changeupVelo}</li>
 			</ul>
 		</div>
 		<div class="stat-card">

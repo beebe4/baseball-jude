@@ -37,26 +37,25 @@
 		<h2>My Story</h2>
 		<div class="introduction-content">
 			<p>
-				As a junior right-handed pitcher, I'm actively seeking opportunities to continue my baseball
-				career at the collegiate level. I'm drawn to competitive programs that can help me realize
-				my full potential while competing at the highest levels.
+				Hey, I'm Jude McDonald, a junior right-handed pitcher, and I'm looking for the right college
+				program to continue my baseball career.
 			</p>
 
 			<p>
-				My commitment to excellence extends beyond personal achievements – I aim to elevate any
-				program I join by:
+				I'm focused on finding a competitive program where I can develop, compete at a high level,
+				and be part of a winning culture. I take pride in my work on the mound—attacking hitters,
+				competing on every pitch, and doing whatever it takes to help my team win.
 			</p>
-			<ul>
-				<li>Competing with intensity on every pitch</li>
-				<li>Supporting coaching staff in achieving program goals</li>
-				<li>Contributing to a winning culture both on and off the field</li>
-			</ul>
 
 			<p>
-				While baseball is my passion, I understand the importance of academic excellence. I'm
-				seeking a strong academic community that will prepare me for success in life, regardless of
-				where my baseball journey leads. This balanced approach to athletics and academics reflects
-				my commitment to long-term success.
+				Beyond the game, I'm committed to my development as both a player and a student. I want to
+				be part of a program that pushes me to get better every day—on the field, in the weight
+				room, and in the classroom.
+			</p>
+
+			<p>
+				I appreciate you taking the time to check out my page. If you think I'd be a good fit for
+				your program, I'd love to connect.
 			</p>
 		</div>
 	</section>
@@ -109,16 +108,6 @@
 
 	.introduction-content p {
 		margin-bottom: 1.5rem;
-	}
-
-	.introduction-content ul {
-		list-style-type: disc;
-		margin-left: 2rem;
-		margin-bottom: 1.5rem;
-	}
-
-	.introduction-content li {
-		margin-bottom: 0.5rem;
 	}
 
 	.profiles-grid {

@@ -19,16 +19,25 @@
 						<div class="text-container">
 							<p class="intro-text">
 								I'm Jude McDonald, a 6'3" right-handed pitcher from Jacksonville, Florida. With an
-								89.7 mph fastball and a 4.0 GPA, I'm excited about the possibility of contributing
-								to your program both on the field and in the classroom.
+								89 mph fastball and a 4.0 GPA, I'm excited about the possibility of contributing to
+								your program both on the field and in the classroom.
 							</p>
 						</div>
 					</div>
 				{:else}
 					<h1 class="text-5xl font-bold">Jude McDonald</h1>
-					<h2 class="text-2xl font-bold">Baseball - Class of 2026</h2>
-					<h3 class="text-xl font-bold">Episcopal School of Jacksonville</h3>
-					<p class="py-6">Dedicated athlete combining power, precision, and academic excellence</p>
+					<h2 class="text-2xl font-bold">Baseball - RHP - Class of 2026</h2>
+					<h3 class="text-xl font-bold">CBU Scout Team & Episcopal School of Jacksonville</h3>
+					<div class="text-container">
+						<p class="py-6">
+							A 6'3" right-handed pitcher from Jacksonville, Florida. With an 89 mph fastball and a
+							4.0 GPA.
+							<br />
+							<br />
+							"I'm excited about the possibility of contributing to your program both on the field and
+							in the classroom."
+						</p>
+					</div>
 					<div class="cta-buttons">
 						<a href="#highlights" class="cta-button primary">Watch Highlights</a>
 					</div>
@@ -76,7 +85,7 @@
 	}
 
 	.college-content {
-		background: rgba(0, 0, 0, 0.7);
+		background: rgba(0, 0, 0, 0.5);
 		padding: 2rem;
 		border-radius: var(--border-radius);
 		backdrop-filter: blur(5px);
@@ -107,10 +116,11 @@
 	}
 
 	.text-container {
-		background: rgba(0, 0, 0, 0.5);
+		background: rgba(0, 0, 0, 0.3);
 		padding: 1.5rem;
 		border-radius: var(--border-radius);
 		margin-top: 1rem;
+		backdrop-filter: blur(5px);
 	}
 
 	.intro-text {
