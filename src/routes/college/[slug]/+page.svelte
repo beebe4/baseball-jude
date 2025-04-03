@@ -4,38 +4,10 @@
 	import Stats from '$lib/components/Stats.svelte';
 	import VideoHighlights from '$lib/components/VideoHighlights.svelte';
 	import Achievements from '$lib/components/Achievements.svelte';
-	import { CollegeService } from '$lib/services/collegeService';
 
-	export const prerender = 'auto';
-
-	const urlCollege = $page.params.slug;
-	let logo = '/images/default-college.png'; // Default logo
-	let collegeName = '';
-
-	// Initialize college name and fetch logo
-	async function initializeCollege() {
-		try {
-			const collegeInfo = await CollegeService.lookupCollege(urlCollege);
-			if (collegeInfo) {
-				collegeName = collegeInfo.name;
-				if (collegeInfo.logo) {
-					logo = collegeInfo.logo;
-				}
-			}
-		} catch (error) {
-			console.error('Error initializing college:', error);
-			// Fallback to basic formatting of the URL slug
-			collegeName = urlCollege
-				.split(/[-_]/)
-				.map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-				.join(' ');
-		}
-	}
-
-	// Initialize on page load
-	$: {
-		initializeCollege();
-	}
+	export let data;
+	const { college } = data;
+	const { name: collegeName, logo } = college;
 </script>
 
 <svelte:head>
