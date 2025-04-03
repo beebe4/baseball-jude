@@ -12,14 +12,14 @@
 	<meta property="og:site_name" content="Jude McDonald Baseball" />
 	<meta property="og:title" content="Jude McDonald - RHP - Class of 2026" />
 	<meta property="og:url" content={$page.url.href} />
-	<meta property="og:image" content="{$page.url.href}/images/jude-pitching.jpeg" />
+	<meta property="og:image" content="/images/jude-pitching.jpeg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta
 		property="og:description"
 		content="Right-handed pitcher (Class of 2026) at Episcopal School of Jacksonville. 6'3&quot; pitcher combining power, precision, and academic excellence with a 4.0 GPA and 26 ACT."
 	/>
-	<meta property="og:logo" content="{$page.url.href}/images/perfect-game-logo.png" />
+	<meta property="og:logo" content="/images/perfect-game-logo.png" />
 
 	<!-- Twitter Card tags -->
 	<meta name="twitter:card" content="summary_large_image" />
@@ -29,7 +29,7 @@
 		name="twitter:description"
 		content="Right-handed pitcher (Class of 2026) at Episcopal School of Jacksonville. 6'3&quot; pitcher combining power, precision, and academic excellence with a 4.0 GPA and 26 ACT."
 	/>
-	<meta name="twitter:image" content="{$page.url.href}/images/jude-pitching.jpeg" />
+	<meta name="twitter:image" content="/images/jude-pitching.jpeg" />
 
 	<!-- Favicon and manifest -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
