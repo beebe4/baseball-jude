@@ -29,7 +29,7 @@
 		name="twitter:description"
 		content="2026 6'3&quot; RHP from Jacksonville, FL. Combines power, precision, and academic excellence with a 4.0 GPA and 26 ACT."
 	/>
-	<meta name="twitter:image" content="https://judebaseball.com/images/jude-pitching-og.jpeg" />
+	<meta name="twitter:image" content="https://judebaseball.com/images/jude-pitching-square.jpeg" />
 
 	<!-- Favicon and manifest -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
