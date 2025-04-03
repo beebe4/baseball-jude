@@ -40,6 +40,7 @@
 
 <svelte:head>
 	<title>Jude McDonald - {collegeName || 'College Profile'}</title>
+	<!-- Only override college-specific meta tags -->
 	<meta
 		property="og:title"
 		content="Baseball Recruiting Profile - Jude McDonald for {collegeName}"
@@ -48,9 +49,6 @@
 		property="og:description"
 		content="6'3&quot; RHP with 89 mph fastball, 4.0 GPA, and 26 ACT interested in {collegeName}'s baseball program. Class of 2026 from Jacksonville, FL."
 	/>
-	<meta property="og:image" content="/images/jude-pitching.jpeg" />
-	<meta property="og:type" content="profile" />
-	<meta property="og:url" content={$page.url.href} />
 </svelte:head>
 
 <Hero {collegeName} {logo} />

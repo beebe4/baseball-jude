@@ -5,33 +5,7 @@
 	import Achievements from '$lib/components/Achievements.svelte';
 </script>
 
-<svelte:head>
-	<title>Jude McDonald - Baseball Class of 2026</title>
-	<meta property="og:title" content="Jude McDonald - Baseball Class of 2026" />
-	<meta property="og:type" content="profile" />
-	<meta property="og:url" content="https://judebaseball.com" />
-	<meta property="og:image" content="https://judebaseball.com/images/jude-pitching.jpeg" />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
-	<meta
-		property="og:description"
-		content="Right-handed pitcher (Class of 2026) at Episcopal School of Jacksonville. 6'3&quot; pitcher combining power, precision, and academic excellence with a 3.9 GPA."
-	/>
-	<meta property="og:site_name" content="Jude McDonald Baseball" />
-
-	<!-- Twitter Card tags -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@jude_mcdonald7" />
-	<meta name="twitter:title" content="Jude McDonald - Baseball Class of 2026" />
-	<meta
-		name="twitter:description"
-		content="Right-handed pitcher (Class of 2026) at Episcopal School of Jacksonville. 6'3&quot; pitcher combining power, precision, and academic excellence with a 3.9 GPA."
-	/>
-	<meta name="twitter:image" content="https://judebaseball.com/images/jude-pitching.jpeg" />
-</svelte:head>
-
 <Hero />
-
 <main class="container">
 	<section id="introduction" class="section introduction">
 		<h2>My Story</h2>
