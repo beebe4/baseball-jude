@@ -12,7 +12,7 @@
 	<meta property="og:site_name" content="Jude McDonald Baseball" />
 	<meta property="og:title" content="Jude McDonald - RHP - Class of 2026" />
 	<meta property="og:url" content="https://judebaseball.com" />
-	<meta property="og:image" content="https://judebaseball.com/images/jude-pitching.jpeg" />
+	<meta property="og:image" content="https://judebaseball.com/images/jude-pitching-og.jpeg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta
@@ -29,7 +29,7 @@
 		name="twitter:description"
 		content="2026 6'3&quot; RHP from Jacksonville, FL. Combines power, precision, and academic excellence with a 4.0 GPA and 26 ACT."
 	/>
-	<meta name="twitter:image" content="https://judebaseball.com/images/jude-pitching.jpeg" />
+	<meta name="twitter:image" content="https://judebaseball.com/images/jude-pitching-og.jpeg" />
 
 	<!-- Favicon and manifest -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
