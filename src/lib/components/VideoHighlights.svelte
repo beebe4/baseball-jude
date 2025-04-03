@@ -1,5 +1,5 @@
 <!-- VideoHighlights.svelte -->
-<section class="section">
+<section id="highlights" class="section video-section">
 	<h2>Game Highlights</h2>
 	<div class="video-grid">
 		<div class="video-card">
@@ -36,6 +36,11 @@
 </section>
 
 <style>
+	.video-section {
+		background-color: var(--bg-2);
+		padding: 4rem 2rem;
+	}
+
 	.video-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -61,7 +66,7 @@
 
 	.video-wrapper {
 		position: relative;
-		padding-bottom: 56.25%;
+		padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
 		height: 0;
 		overflow: hidden;
 		background: var(--bg-2);

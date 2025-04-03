@@ -30,7 +30,7 @@
 					<h3 class="text-xl font-bold">Episcopal School of Jacksonville</h3>
 					<p class="py-6">Dedicated athlete combining power, precision, and academic excellence</p>
 					<div class="cta-buttons">
-						<a href="#highlights" class="cta-button primary">Watch Me In Action</a>
+						<a href="#highlights" class="cta-button primary">Watch Highlights</a>
 					</div>
 				{/if}
 			</div>
