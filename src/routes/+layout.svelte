@@ -1,3 +1,8 @@
+<script>
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	injectAnalytics();
+</script>
+
 <svelte:head>
 	<title>Jude McDonald - Baseball Class of 2026</title>
 	<meta property="og:title" content="Jude McDonald - RHP - Class of 2026" />
@@ -8,7 +13,7 @@
 	<meta property="og:image:height" content="630" />
 	<meta
 		property="og:description"
-		content="Right-handed pitcher (Class of 2026) at Episcopal School of Jacksonville. 6'3&quot; pitcher combining power, precision, and academic excellence with a 3.9 GPA."
+		content="Right-handed pitcher (Class of 2026) at Episcopal School of Jacksonville. 6'3&quot; pitcher combining power, precision, and academic excellence with a 4.0 GPA and 26 ACT."
 	/>
 	<meta property="og:site_name" content="Jude McDonald - RHP - Class of 2026" />
 
@@ -18,7 +23,7 @@
 	<meta name="twitter:title" content="Jude McDonald - RHP - 2026" />
 	<meta
 		name="twitter:description"
-		content="Right-handed pitcher (Class of 2026) at Episcopal School of Jacksonville. 6'3&quot; pitcher combining power, precision, and academic excellence with a 3.9 GPA."
+		content="Right-handed pitcher (Class of 2026) at Episcopal School of Jacksonville. 6'3&quot; pitcher combining power, precision, and academic excellence with a 4.0 GPA and 26 ACT."
 	/>
 	<meta name="twitter:image" content="https://judebaseball.com/images/jude-pitching.jpeg" />
 
