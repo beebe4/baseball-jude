@@ -1,6 +1,6 @@
 <!-- VideoHighlights.svelte -->
 <section id="highlights" class="section video-section">
-	<h2>Game Highlights</h2>
+	<h2>Game Highlights and Podcast Features</h2>
 	<div class="video-grid">
 		<div class="video-card">
 			<div class="video-wrapper">
@@ -20,6 +20,42 @@
 		<div class="video-card">
 			<div class="video-wrapper">
 				<iframe
+					src="https://www.youtube.com/embed/3mGAio-iLjc?start=751"
+					title="Where's Home Podcast Feature"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+			<div class="video-details">
+				<h3>Where's Home Podcast Feature</h3>
+				<p>
+					Featured on <a
+						href="https://www.youtube.com/@WheresHomePod"
+						target="_blank"
+						rel="noopener noreferrer">Where's Home Podcast</a
+					>
+				</p>
+			</div>
+		</div>
+		<div class="video-card">
+			<div class="video-wrapper">
+				<iframe
+					src="https://www.youtube.com/embed/YHF7prcebxY"
+					title="Extended Look vs Providence"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+			<div class="video-details">
+				<h3>Extended Look vs Providence</h3>
+				<p>Three innings of work against district rival Providence</p>
+			</div>
+		</div>
+		<div class="video-card">
+			<div class="video-wrapper">
+				<iframe
 					src="https://www.youtube.com/embed/Qf2ahreiVk0?start=3666"
 					title="No Gate Fees - Committed to the Uncommitted"
 					frameborder="0"
@@ -29,7 +65,13 @@
 			</div>
 			<div class="video-details">
 				<h3>No Gate Fees Feature</h3>
-				<p>Featured on "Committed to the Uncommitted"</p>
+				<p>
+					Featured on <a
+						href="https://www.youtube.com/@ActionSportsJax"
+						target="_blank"
+						rel="noopener noreferrer">Action Sports Jax</a
+					>'s "Committed to the Uncommitted"
+				</p>
 			</div>
 		</div>
 	</div>
@@ -43,10 +85,10 @@
 
 	.video-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 		gap: 2.5rem;
 		margin-top: 2rem;
-		max-width: 1200px;
+		max-width: 1400px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -102,27 +144,48 @@
 		line-height: 1.5;
 	}
 
+	.video-details a {
+		color: var(--link);
+		text-decoration: none;
+		transition: color 0.2s;
+	}
+
+	.video-details a:hover {
+		color: var(--accent);
+		text-decoration: underline;
+	}
+
 	@media (max-width: 768px) {
+		.video-section {
+			padding: 3rem 1rem;
+		}
+
 		.video-grid {
 			grid-template-columns: 1fr;
 			gap: 2rem;
-			padding: 0 1rem;
+			padding: 0;
+			max-width: 100%;
 		}
 
 		.video-card {
-			margin-bottom: 1rem;
+			margin-bottom: 1.5rem;
+			width: 100%;
+		}
+
+		.video-wrapper {
+			padding-bottom: 62.25%; /* Slightly taller aspect ratio for mobile */
 		}
 
 		.video-details {
-			padding: 1.25rem;
+			padding: 1.5rem;
 		}
 
 		.video-details h3 {
-			font-size: 1.2rem;
+			font-size: 1.3rem;
 		}
 
 		.video-details p {
-			font-size: 0.95rem;
+			font-size: 1rem;
 		}
 	}
 </style>
