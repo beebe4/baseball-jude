@@ -17,14 +17,9 @@
 
 			<p>
 				I'm focused on finding a competitive program where I can develop, compete at a high level,
-				and be part of a winning culture. I take pride in my work on the mound—attacking hitters,
-				competing on every pitch, and doing whatever it takes to help my team win.
-			</p>
-
-			<p>
-				Beyond the game, I'm committed to my development as both a player and a student. I want to
-				be part of a program that pushes me to get better every day—on the field, in the weight
-				room, and in the classroom.
+				and be part of a winning culture. Beyond the game, I'm committed to my development as both a
+				player and a student. I want to be part of a program that pushes me to get better every
+				day—on the field, in the weight room, and in the classroom.
 			</p>
 
 			<p>
