@@ -19,7 +19,7 @@
 	/>
 	<meta
 		property="og:description"
-		content="6'3&quot; RHP with 89 mph fastball, 4.0 GPA, and 26 ACT interested in {collegeName}'s baseball program. Class of 2026 from Jacksonville, FL."
+		content="6'3&quot; RHP with 89 mph fastball and 4.0 GPA interested in {collegeName}'s baseball program. Class of 2026 from Jacksonville, FL."
 	/>
 </svelte:head>
 

@@ -26,12 +26,11 @@
 		</div>
 		<div class="achievement-card">
 			<span class="card-icon">📚</span>
-			<h3>Academics & Character</h3>
-			<ul class="achievement-list">
-				<li>Episcopal School of Jacksonville</li>
-				<li>4.0 GPA</li>
-				<li>26 ACT Score</li>
-				<li>AP Scholar with Distinction</li>
+			<h3>Academic Excellence</h3>
+			<ul>
+				<li>4.0 Unweighted GPA</li>
+				<li>Honor Roll Student</li>
+				<li>Advanced Placement Classes</li>
 			</ul>
 		</div>
 	</div>
