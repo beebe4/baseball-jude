@@ -27,7 +27,7 @@
 		<div class="achievement-card">
 			<span class="card-icon">📚</span>
 			<h3>Academic Excellence</h3>
-			<ul>
+			<ul class="achievement-list">
 				<li>4.0 Unweighted GPA</li>
 				<li>Honor Roll Student</li>
 				<li>Advanced Placement Classes</li>
