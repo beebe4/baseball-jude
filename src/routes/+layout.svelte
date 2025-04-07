@@ -37,6 +37,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon.svg" />
 	<link rel="manifest" href="/site.webmanifest" />
 	<meta name="theme-color" content="#7bb8b1" />
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </svelte:head>
 
 <slot />

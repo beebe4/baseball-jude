@@ -75,6 +75,28 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="twitter-section">
+		<h3>Perfect Game Scouting Report</h3>
+		<div class="tweet-container">
+			<blockquote class="twitter-tweet">
+				<p lang="en" dir="ltr">
+					Jude McDonald ('26 FL) goes 3 strong innings in the quarters with the FB up to 87, sitting
+					84-86 mostly. CH profiles well off the FB with dive in the mid/upper 70's. <a
+						href="https://twitter.com/Florida_PG?ref_src=twsrc%5Etfw">@Florida_PG</a
+					>
+					<a href="https://twitter.com/hashtag/NatElite?src=hash&amp;ref_src=twsrc%5Etfw"
+						>#NatElite</a
+					> <a href="https://twitter.com/PG_Uncommitted?ref_src=twsrc%5Etfw">@PG_Uncommitted</a>
+					<a href="https://t.co/954xKbIi41">pic.twitter.com/954xKbIi41</a>
+				</p>
+				&mdash; Perfect Game Scout (@PG_Scouting)<a
+					href="https://twitter.com/PG_Scouting/status/1808289324955226405?ref_src=twsrc%5Etfw"
+					>July 2, 2024</a
+				>
+			</blockquote>
+		</div>
+	</div>
 </section>
 
 <style>
@@ -153,6 +175,27 @@
 	.video-details a:hover {
 		color: var(--accent);
 		text-decoration: underline;
+	}
+
+	.twitter-section {
+		margin-top: 4rem;
+		text-align: center;
+		max-width: 550px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.twitter-section h3 {
+		margin-bottom: 1.5rem;
+		color: var(--fg-1);
+		font-size: 1.4rem;
+	}
+
+	.tweet-container {
+		background: white;
+		border-radius: var(--border-radius);
+		padding: 1rem;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	}
 
 	@media (max-width: 768px) {
