@@ -1,7 +1,15 @@
 <!-- Hero.svelte -->
 <script lang="ts">
+	import { track } from '@vercel/analytics/sveltekit';
 	export let collegeName: string | undefined = undefined;
 	export let logo: string | undefined = undefined;
+
+	function handleHighlightsClick() {
+		track('Navigation', {
+			action: 'Watch Highlights Click',
+			from: collegeName ? `College Page - ${collegeName}` : 'Home Page'
+		});
+	}
 </script>
 
 <div class="hero min-h-screen" class:college={!!collegeName}>
@@ -39,7 +47,9 @@
 						</p>
 					</div>
 					<div class="cta-buttons">
-						<a href="#highlights" class="cta-button primary">Watch Highlights</a>
+						<a href="#highlights" class="cta-button primary" on:click={handleHighlightsClick}
+							>Watch Highlights</a
+						>
 					</div>
 				{/if}
 			</div>
