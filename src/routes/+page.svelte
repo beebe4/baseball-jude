@@ -34,7 +34,7 @@
 	<Achievements />
 
 	<section class="section profiles-section">
-		<h2>Professional Profiles</h2>
+		<h2>More Information</h2>
 		<div class="profiles-grid">
 			<a
 				href="https://www.perfectgame.org/Players/Playerprofile.aspx?ID=773222"
