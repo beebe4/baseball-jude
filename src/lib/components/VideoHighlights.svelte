@@ -1,22 +1,4 @@
 <!-- VideoHighlights.svelte -->
-<script lang="ts">
-	import { track } from '@vercel/analytics/sveltekit';
-
-	function handleVideoPlay(title: string) {
-		track('Video Play', {
-			title,
-			section: 'Highlights'
-		});
-	}
-
-	function handleVideoEnd(title: string) {
-		track('Video Complete', {
-			title,
-			section: 'Highlights'
-		});
-	}
-</script>
-
 <section id="highlights" class="section video-section">
 	<h2>Game Highlights and Podcast Features</h2>
 	<div class="video-grid">
@@ -28,8 +10,6 @@
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen
-					on:play={() => handleVideoPlay('Pitch Arsenal')}
-					on:ended={() => handleVideoEnd('Pitch Arsenal')}
 				></iframe>
 			</div>
 			<div class="video-details">
@@ -45,8 +25,6 @@
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen
-					on:play={() => handleVideoPlay("Where's Home Podcast Feature")}
-					on:ended={() => handleVideoEnd("Where's Home Podcast Feature")}
 				></iframe>
 			</div>
 			<div class="video-details">
@@ -68,8 +46,6 @@
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen
-					on:play={() => handleVideoPlay('Extended Look vs Providence')}
-					on:ended={() => handleVideoEnd('Extended Look vs Providence')}
 				></iframe>
 			</div>
 			<div class="video-details">
@@ -85,8 +61,6 @@
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen
-					on:play={() => handleVideoPlay('No Gate Fees Feature')}
-					on:ended={() => handleVideoEnd('No Gate Fees Feature')}
 				></iframe>
 			</div>
 			<div class="video-details">
