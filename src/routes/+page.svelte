@@ -11,8 +11,8 @@
 		<h2>My Story</h2>
 		<div class="introduction-content">
 			<p>
-				Hey, I'm Jude McDonald, a junior right-handed pitcher, and I'm looking for the right college
-				program to continue my baseball career.
+				Hey, I'm Jude McDonald, a right-handed pitcher graduating from high school in 2026. I'm
+				looking for the right college program to continue my academic and baseball career.
 			</p>
 
 			<p>
