@@ -1,0 +1,57 @@
+# Component Patterns
+
+This document outlines the standard patterns for Svelte component development in our project.
+
+## TypeScript Integration
+- All components must use TypeScript
+- Props should be explicitly typed
+- Event handlers should use the `handle*` naming convention
+- Utilize TypeScript's strict mode features
+
+## Component Structure
+```svelte
+<script lang="ts">
+  // Props should be typed
+  export let propName: PropType;
+  
+  // Event handlers use handle* naming
+  function handleEvent() {
+    // Implementation
+  }
+  
+  // Form submissions prevent default
+  function handleSubmit(event: SubmitEvent) {
+    event.preventDefault();
+    // Implementation
+  }
+</script>
+
+<div class="component-name">
+  <!-- Component content -->
+</div>
+
+<style lang="scss">
+  /* Scoped styles */
+  .component-name {
+    /* Component-specific styles */
+  }
+</style>
+```
+
+## Style Guidelines
+- Each component must have scoped styles
+- Use SCSS for enhanced styling capabilities
+- Follow BEM-like naming conventions
+- Utilize existing design tokens and variables
+
+## Event Handling
+- Form submissions must prevent default behavior
+- Event handlers should be properly typed
+- Custom events should be documented
+- Use Svelte's built-in event modifiers when appropriate
+
+## Documentation
+- Include JSDoc comments for component props
+- Document complex logic or business rules
+- Add examples for reusable components
+- Note any dependencies or requirements 

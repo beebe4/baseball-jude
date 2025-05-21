@@ -1,0 +1,91 @@
+# Test Organization
+
+This document outlines the structure and organization of test files in our Svelte application.
+
+## Directory Structure
+```
+src/
+├── components/
+│   ├── ComponentName/
+│   │   ├── ComponentName.svelte
+│   │   └── ComponentName.test.ts
+│   └── __tests__/
+│       └── integration/
+├── lib/
+│   └── __tests__/
+│       ├── unit/
+│       └── integration/
+└── routes/
+    └── __tests__/
+        └── e2e/
+```
+
+## Test File Naming
+- Unit test files: `*.test.ts` or `*.spec.ts`
+- Integration tests: `*.integration.test.ts`
+- E2E tests: `*.e2e.test.ts`
+- Test utilities: `*.test.utils.ts`
+- Test fixtures: `*.fixtures.ts`
+
+## Test File Structure
+```typescript
+import { render, fireEvent } from '@testing-library/svelte';
+import Component from './Component.svelte';
+import { testData } from './Component.fixtures';
+
+describe('Component', () => {
+  // Setup and teardown
+  beforeEach(() => {
+    // Common setup
+  });
+
+  afterEach(() => {
+    // Common cleanup
+  });
+
+  // Group related tests
+  describe('initialization', () => {
+    it('should render with default props', () => {
+      // Test implementation
+    });
+  });
+
+  describe('interactions', () => {
+    it('should handle user input', () => {
+      // Test implementation
+    });
+  });
+});
+```
+
+## Test Categories
+
+### Unit Tests (`*.test.ts`)
+- Place next to the component/module being tested
+- Focus on isolated functionality
+- Mock external dependencies
+- Test one module at a time
+
+### Integration Tests (`*.integration.test.ts`)
+- Place in `__tests__/integration/`
+- Test component interactions
+- Test data flow between components
+- Limited mocking of dependencies
+
+### E2E Tests (`*.e2e.test.ts`)
+- Place in `__tests__/e2e/`
+- Test complete user flows
+- Use real browser environment
+- Minimal mocking
+
+## Test Utilities
+- Place shared test utilities in `__tests__/utils/`
+- Create helpers for common testing patterns
+- Share test fixtures between related tests
+- Maintain type safety in test utilities
+
+## Coverage Requirements
+- Maintain minimum 80% coverage for unit tests
+- Track coverage metrics per directory
+- Generate coverage reports during CI
+- Exclude appropriate files from coverage 
