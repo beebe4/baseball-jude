@@ -3,6 +3,7 @@
 	import Stats from '$lib/components/Stats.svelte';
 	import VideoHighlights from '$lib/components/VideoHighlights.svelte';
 	import Achievements from '$lib/components/Achievements.svelte';
+	import Schedule from '$lib/components/Schedule.svelte';
 </script>
 
 <Hero />
@@ -30,6 +31,7 @@
 	</section>
 
 	<Stats />
+	<Schedule />
 	<VideoHighlights />
 	<Achievements />
 
