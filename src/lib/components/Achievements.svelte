@@ -28,7 +28,7 @@
 			<span class="card-icon">📚</span>
 			<h3>Academic Excellence</h3>
 			<ul class="achievement-list">
-				<li>4.0 Unweighted GPA</li>
+				<li>4.04 Unweighted GPA</li>
 				<li>Honor Roll Student</li>
 				<li>Advanced Placement Classes</li>
 			</ul>
@@ -44,7 +44,7 @@
 				<span class="card-icon">🎓</span>
 				<h3>Academic Excellence</h3>
 				<p>
-					{collegeName}'s commitment to academic excellence aligns perfectly with my 4.0 GPA and 26
+					{collegeName}'s commitment to academic excellence aligns perfectly with my 4.04 GPA and 29
 					ACT score, demonstrating my dedication to both athletic and academic achievement.
 				</p>
 			</div>

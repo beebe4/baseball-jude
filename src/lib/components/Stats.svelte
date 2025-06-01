@@ -3,7 +3,7 @@
 	export const baseballStats = {
 		physical: {
 			height: '6\'3"',
-			weight: '190 lbs',
+			weight: '195 lbs',
 			position: 'RHP, OF'
 		},
 		batting: {
