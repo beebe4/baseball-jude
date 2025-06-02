@@ -11,8 +11,9 @@
 			<h3>High School Varsity</h3>
 			<ul class="achievement-list">
 				<li>Started Every Year of HS</li>
-				<li>2nd Most Innings Pitched (Sophomore)</li>
+				<li>2nd Most Innings Pitched (10th & 11th)</li>
 				<li>2024 District Runner-Up</li>
+				<li>Regional Qualifier '24 & '25</li>
 			</ul>
 		</div>
 		<div class="achievement-card">
@@ -30,7 +31,7 @@
 			<ul class="achievement-list">
 				<li>4.04 Unweighted GPA</li>
 				<li>Honor Roll Student</li>
-				<li>Advanced Placement Classes</li>
+				<li>7 AP Classes</li>
 			</ul>
 		</div>
 	</div>
