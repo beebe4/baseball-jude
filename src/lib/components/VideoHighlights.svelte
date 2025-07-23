@@ -77,24 +77,41 @@
 	</div>
 
 	<div class="twitter-section">
-		<h3>Perfect Game Scouting Report</h3>
-		<div class="tweet-container">
-			<blockquote class="twitter-tweet">
-				<p lang="en" dir="ltr">
-					Jude McDonald ('26 FL) goes 3 strong innings in the quarters with the FB up to 87, sitting
-					84-86 mostly. CH profiles well off the FB with dive in the mid/upper 70's. <a
-						href="https://twitter.com/Florida_PG?ref_src=twsrc%5Etfw">@Florida_PG</a
+		<h2>Perfect Game Scouting Reports</h2>
+		<div class="tweets-grid">
+			<div class="tweet-container">
+				<blockquote class="twitter-tweet">
+					<p lang="en" dir="ltr">
+						Jude McDonald ('26 FL) goes 3 strong innings in the quarters with the FB up to 87, sitting
+						84-86 mostly. CH profiles well off the FB with dive in the mid/upper 70's. <a
+							href="https://twitter.com/Florida_PG?ref_src=twsrc%5Etfw">@Florida_PG</a
+						>
+						<a href="https://twitter.com/hashtag/NatElite?src=hash&amp;ref_src=twsrc%5Etfw"
+							>#NatElite</a
+						> <a href="https://twitter.com/PG_Uncommitted?ref_src=twsrc%5Etfw">@PG_Uncommitted</a>
+						<a href="https://t.co/954xKbIi41">pic.twitter.com/954xKbIi41</a>
+					</p>
+					&mdash; Perfect Game Scout (@PG_Scouting)<a
+						href="https://twitter.com/PG_Scouting/status/1808289324955226405?ref_src=twsrc%5Etfw"
+						>July 2, 2024</a
 					>
-					<a href="https://twitter.com/hashtag/NatElite?src=hash&amp;ref_src=twsrc%5Etfw"
-						>#NatElite</a
-					> <a href="https://twitter.com/PG_Uncommitted?ref_src=twsrc%5Etfw">@PG_Uncommitted</a>
-					<a href="https://t.co/954xKbIi41">pic.twitter.com/954xKbIi41</a>
-				</p>
-				&mdash; Perfect Game Scout (@PG_Scouting)<a
-					href="https://twitter.com/PG_Scouting/status/1808289324955226405?ref_src=twsrc%5Etfw"
-					>July 2, 2024</a
-				>
-			</blockquote>
+				</blockquote>
+			</div>
+			<div class="tweet-container">
+				<blockquote class="twitter-tweet">
+					<p lang="en" dir="ltr">
+						Jude McDonald ('26 FL) - with 5 Ks over 4 IP w/ 0 ER. Ran the FB up to 89 mph w/ ASR & CB 70-75. Flashed CH 80/81. <a href="https://twitter.com/hashtag/WWBA?src=hash&amp;ref_src=twsrc%5Etfw"
+							>#WWBA</a> 
+						<a href="https://twitter.com/PG_Uncommitted?ref_src=twsrc%5Etfw">@PG_Uncommitted</a>
+ 						<a href="https://twitter.com/Florida_PG?ref_src=twsrc%5Etfw">@Florida_PG</a>
+ 						<a href="https://twitter.com/CBU_FL?ref_src=twsrc%5Etfw">@CBU_FL</a>
+					</p>
+					&mdash; Perfect Game Scout (@PG_Scouting)<a
+						href="https://twitter.com/PG_Scouting/status/1940173519565857080?ref_src=twsrc%5Etfw"
+						>December 29, 2024</a
+					>
+				</blockquote>
+			</div>
 		</div>
 	</div>
 </section>
@@ -179,16 +196,20 @@
 
 	.twitter-section {
 		margin-top: 4rem;
-		text-align: center;
-		max-width: 550px;
+		max-width: 1400px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.twitter-section h3 {
-		margin-bottom: 1.5rem;
-		color: var(--fg-1);
-		font-size: 1.4rem;
+	.twitter-section h2 {
+		margin-bottom: 2rem;
+	}
+
+	.tweets-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		gap: 2.5rem;
+		justify-items: center;
 	}
 
 	.tweet-container {
@@ -196,6 +217,26 @@
 		border-radius: var(--border-radius);
 		padding: 1rem;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		max-width: 550px;
+		width: 100%;
+		transition: transform 0.2s ease-in-out;
+		overflow: hidden;
+	}
+
+	.tweet-container:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	/* Force Twitter embeds to be responsive */
+	.tweet-container .twitter-tweet {
+		margin: 0 auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	.tweet-container iframe {
+		max-width: 100% !important;
 	}
 
 	@media (max-width: 768px) {
@@ -229,6 +270,23 @@
 
 		.video-details p {
 			font-size: 1rem;
+		}
+
+
+		.tweets-grid {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.tweet-container {
+			max-width: 100%;
+			padding: 0.5rem;
+		}
+
+		/* Additional mobile tweet styling */
+		.tweet-container .twitter-tweet {
+			transform: scale(0.9);
+			transform-origin: top center;
 		}
 	}
 </style>
