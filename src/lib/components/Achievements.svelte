@@ -17,14 +17,14 @@
 			<ul class="achievement-list">
 				<li>CBU Scout Team - 2026</li>
 				<li>Top 10 Team in the Nation</li>
-				<li>PG All-Tournament Team (x8)</li>
+				<li>PG All-Tournament Team (x9)</li>
 			</ul>
 		</div>
 		<div class="achievement-card">
 			<span class="card-icon">📚</span>
 			<h3>Academic Excellence</h3>
 			<ul class="achievement-list">
-				<li>4.04 Unweighted GPA</li>
+				<li>4.04 Weighted GPA</li>
 				<li>Honor Roll Student</li>
 				<li>7 AP Classes</li>
 			</ul>
