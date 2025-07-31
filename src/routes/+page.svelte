@@ -1,6 +1,7 @@
 <script>
 	import Hero from '$lib/components/Hero.svelte';
 	import Stats from '$lib/components/Stats.svelte';
+	import PerfectGameProfile from '$lib/components/PerfectGameProfile.svelte';
 	import VideoHighlights from '$lib/components/VideoHighlights.svelte';
 	import Achievements from '$lib/components/Achievements.svelte';
 	import Schedule from '$lib/components/Schedule.svelte';
@@ -33,6 +34,7 @@
 	<Stats />
 	<Schedule />
 	<VideoHighlights />
+	<PerfectGameProfile />
 	<Achievements />
 
 	<section class="section profiles-section">
