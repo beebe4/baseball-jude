@@ -31,6 +31,18 @@
 			event: '2025 PG BCS National Championship',
 			location: 'Ft. Myers, FL',
 			url: 'https://www.perfectgame.org/Events/Default.aspx?event=99747'
+		},
+		{
+			date: 'July 30 2025',
+			event: 'North to South Academic Showcase',
+			location: 'University of Richmond',
+			url: 'https://www.spiderbaseballcamps.com/north-to-south-academic-prospect-camp-ii.cfm'
+		},
+		{
+			date: 'August 9 2025',
+			event: 'CBU College Camp',
+			location: 'Ft. Myers, FL',
+			url: 'https://x.com/CBU_FL/status/1949883474053390688'
 		}
 	];
 
