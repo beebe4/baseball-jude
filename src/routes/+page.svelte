@@ -1,5 +1,6 @@
 <script>
 	import Hero from '$lib/components/Hero.svelte';
+	import CommitmentAnnouncement from '$lib/components/CommitmentAnnouncement.svelte';
 	import Stats from '$lib/components/Stats.svelte';
 	import PerfectGameProfile from '$lib/components/PerfectGameProfile.svelte';
 	import VideoHighlights from '$lib/components/VideoHighlights.svelte';
@@ -9,6 +10,7 @@
 
 <Hero />
 <main class="container">
+	<CommitmentAnnouncement />
 	<section id="introduction" class="section introduction">
 		<h2>My Story</h2>
 		<div class="introduction-content">

@@ -8,27 +8,30 @@
 <svelte:head>
 	<title>Jude McDonald - Baseball Class of 2026</title>
 
-	<!-- Base OpenGraph tags -->
+	<!-- Base OpenGraph tags (updated for commitment announcement) -->
 	<meta property="og:type" content="profile" />
 	<meta property="og:site_name" content="Jude McDonald Baseball" />
-	<meta property="og:title" content="Jude McDonald - RHP - Class of 2026" />
+	<meta
+		property="og:title"
+		content="Committed: Jude McDonald → Stony Brook University (2026–2027)"
+	/>
 	<meta property="og:url" content="https://judebaseball.com" />
 	<meta property="og:image" content="https://judebaseball.com/images/jude-pitching-og.jpeg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta
 		property="og:description"
-		content="2026 6'3&quot; RHP from Jacksonville, FL. Combines power, precision, and academic excellence with a 4.0 GPA."
+		content="Exciting news: Jude has committed to Stony Brook University! Explore his profile, schedule, highlights, and contact info."
 	/>
 	<meta property="og:logo" content="https://judebaseball.com/favicon.svg" />
 
 	<!-- Twitter Card tags -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@jude_mcdonald7" />
-	<meta name="twitter:title" content="Jude McDonald - RHP - Class of 2026" />
+	<meta name="twitter:title" content="Committed: Jude McDonald → Stony Brook University" />
 	<meta
 		name="twitter:description"
-		content="2026 6'3&quot; RHP from Jacksonville, FL. Combines power, precision, and academic excellence with a 4.0 GPA."
+		content="Exciting news: Jude has committed to Stony Brook University! Explore his profile and highlights."
 	/>
 	<meta name="twitter:image" content="https://judebaseball.com/images/jude-pitching-square.jpeg" />
 
