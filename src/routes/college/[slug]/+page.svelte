@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import Hero from '$lib/components/Hero.svelte';
 	import Stats from '$lib/components/Stats.svelte';
 	import VideoHighlights from '$lib/components/VideoHighlights.svelte';
@@ -19,7 +18,7 @@
 	/>
 	<meta
 		property="og:description"
-		content="6'3&quot; RHP with 89 mph fastball and 4.0 GPA interested in {collegeName}'s baseball program. Class of 2026 from Jacksonville, FL."
+		content="6'3&quot; RHP with 91 mph fastball and 4.0 GPA interested in {collegeName}'s baseball program. Class of 2026 from Jacksonville, FL."
 	/>
 </svelte:head>
 
@@ -28,7 +27,7 @@
 <main class="container">
 	<Stats />
 	<VideoHighlights />
-	<Achievements {collegeName} />
+	<Achievements />
 
 	<section class="section contact-section">
 		<h2>Let's Connect</h2>

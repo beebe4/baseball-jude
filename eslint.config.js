@@ -6,6 +6,9 @@ import globals from 'globals';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
+	{
+		ignores: ['build/', '.svelte-kit/', 'dist/', '.vercel/', 'node_modules/']
+	},
 	js.configs.recommended,
 	...ts.configs.recommended,
 	...svelte.configs['flat/recommended'],
@@ -28,6 +31,10 @@ export default [
 		}
 	},
 	{
-		ignores: ['build/', '.svelte-kit/', 'dist/']
+		rules: {
+			'@typescript-eslint/no-unused-expressions': 'off',
+			'svelte/no-inner-declarations': 'off',
+			'no-inner-declarations': 'off'
+		}
 	}
 ];

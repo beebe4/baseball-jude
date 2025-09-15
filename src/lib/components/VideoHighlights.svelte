@@ -82,8 +82,8 @@
 			<div class="tweet-container">
 				<blockquote class="twitter-tweet">
 					<p lang="en" dir="ltr">
-						Jude McDonald ('26 FL) goes 3 strong innings in the quarters with the FB up to 87, sitting
-						84-86 mostly. CH profiles well off the FB with dive in the mid/upper 70's. <a
+						Jude McDonald ('26 FL) goes 3 strong innings in the quarters with the FB up to 87,
+						sitting 84-86 mostly. CH profiles well off the FB with dive in the mid/upper 70's. <a
 							href="https://twitter.com/Florida_PG?ref_src=twsrc%5Etfw">@Florida_PG</a
 						>
 						<a href="https://twitter.com/hashtag/NatElite?src=hash&amp;ref_src=twsrc%5Etfw"
@@ -100,11 +100,13 @@
 			<div class="tweet-container">
 				<blockquote class="twitter-tweet">
 					<p lang="en" dir="ltr">
-						Jude McDonald ('26 FL) - with 5 Ks over 4 IP w/ 0 ER. Ran the FB up to 89 mph w/ ASR & CB 70-75. Flashed CH 80/81. <a href="https://twitter.com/hashtag/WWBA?src=hash&amp;ref_src=twsrc%5Etfw"
-							>#WWBA</a> 
+						Jude McDonald ('26 FL) - with 5 Ks over 4 IP w/ 0 ER. Ran the FB up to 89 mph w/ ASR &
+						CB 70-75. Flashed CH 80/81. <a
+							href="https://twitter.com/hashtag/WWBA?src=hash&amp;ref_src=twsrc%5Etfw">#WWBA</a
+						>
 						<a href="https://twitter.com/PG_Uncommitted?ref_src=twsrc%5Etfw">@PG_Uncommitted</a>
- 						<a href="https://twitter.com/Florida_PG?ref_src=twsrc%5Etfw">@Florida_PG</a>
- 						<a href="https://twitter.com/CBU_FL?ref_src=twsrc%5Etfw">@CBU_FL</a>
+						<a href="https://twitter.com/Florida_PG?ref_src=twsrc%5Etfw">@Florida_PG</a>
+						<a href="https://twitter.com/CBU_FL?ref_src=twsrc%5Etfw">@CBU_FL</a>
 					</p>
 					&mdash; Perfect Game Scout (@PG_Scouting)<a
 						href="https://twitter.com/PG_Scouting/status/1940173519565857080?ref_src=twsrc%5Etfw"
@@ -235,10 +237,6 @@
 		max-width: 100% !important;
 	}
 
-	.tweet-container iframe {
-		max-width: 100% !important;
-	}
-
 	@media (max-width: 768px) {
 		.video-section {
 			padding: 3rem 1rem;
@@ -271,7 +269,6 @@
 		.video-details p {
 			font-size: 1rem;
 		}
-
 
 		.tweets-grid {
 			grid-template-columns: 1fr;

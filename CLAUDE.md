@@ -32,29 +32,45 @@ yarn format       # Auto-format code
 
 ## Architecture
 
-### Component Structure
-- **Components**: Located in `src/lib/components/` - reusable Svelte components for Hero, Stats, VideoHighlights, Achievements, Schedule, and ContactForm
-- **Services**: Business logic in `src/lib/services/` - currently contains `collegeService.ts` for college data lookup
-- **Routes**: SvelteKit file-based routing in `src/routes/`
-  - Main page: `src/routes/+page.svelte`
-  - Dynamic college pages: `src/routes/college/[slug]/+page.svelte`
+### Tech Stack
 
-### Key Technical Details
-- **TypeScript**: Strict mode enabled
-- **Styling**: Tailwind CSS with custom sports-themed design
-- **Deployment**: Vercel adapter configured
-- **Analytics**: Vercel Analytics and Speed Insights integrated
+- **Framework**: SvelteKit with file-based routing
+- **Language**: TypeScript (strict mode enabled in tsconfig.json)
+- **Styling**: Custom CSS variables defined in `src/app.html` (no Tailwind CSS configured)
+- **Build Tool**: Vite
+- **Deployment**: Vercel adapter with Analytics and Speed Insights
+
+### Project Structure
+
+- `src/lib/components/` - Reusable Svelte components:
+  - `Hero.svelte`, `Stats.svelte`, `VideoHighlights.svelte`
+  - `PerfectGameProfile.svelte` - Perfect Game statistics display
+  - `Achievements.svelte`, `Schedule.svelte`, `ContactForm.svelte`
+- `src/lib/services/collegeService.ts` - Clearbit API integration for college data lookup
+- `src/routes/` - SvelteKit pages:
+  - `+page.svelte` - Main landing page
+  - `college/[slug]/+page.svelte` - Dynamic college-specific pages
+  - `+layout.svelte` - Root layout with Vercel Analytics
 
 ### Dynamic College Pages
-The application generates personalized landing pages for college recruiters. When creating or modifying college pages:
-1. College data is fetched using the Clearbit API in `collegeService.ts`
-2. URLs follow the pattern `/college/[college-name]` (e.g., `/college/ucla`)
-3. Pages display college logos, colors, and personalized messaging
-4. Fallback handling exists for colleges not found in the API
+
+The `/college/[slug]` route creates personalized landing pages for college recruiters:
+
+- College data fetched via Clearbit API (`collegeService.ts`)
+- Handles common abbreviations (e.g., `ucla`, `mit`, `usc`)
+- Graceful fallback for colleges not found in API
+- College logos and branding dynamically displayed
+
+### Key Configuration
+
+- **TypeScript**: Strict mode, bundler module resolution
+- **SvelteKit**: Vercel adapter, prerender warnings ignored
+- **Package Manager**: Yarn with resolutions for esbuild
+- **No Testing Framework**: Tests need to be set up if required
 
 ## Important Notes
 
-- **No test framework** is currently configured. When adding tests, you'll need to set up a testing framework first.
-- **Environment variables**: Any API keys should be stored in environment variables, not committed to the repository
-- **College service**: The `collegeService.ts` uses Clearbit API for college data - handle API failures gracefully
-- **Static assets**: Images are stored in `/static/images/`
+- **CSS Styling**: Uses CSS custom properties defined in `app.html`, not Tailwind
+- **Static Assets**: Images stored in `/static/images/`
+- **Perfect Game Data**: Hardcoded in `PerfectGameProfile.svelte` component
+- **Environment Variables**: Required for any API keys (not committed to repo)

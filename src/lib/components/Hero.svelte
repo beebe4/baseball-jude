@@ -19,7 +19,7 @@
 						<div class="text-container">
 							<p class="intro-text">
 								I'm Jude McDonald, a 6'3" right-handed pitcher from Jacksonville, Florida. With an
-								89 mph fastball and a 4.0 GPA, I'm excited about the possibility of contributing to
+								91 mph fastball and a 4.0 GPA, I'm excited about the possibility of contributing to
 								your program both on the field and in the classroom.
 							</p>
 						</div>
@@ -30,8 +30,8 @@
 					<h3 class="text-xl font-bold">CBU Scout Team & Episcopal School of Jacksonville</h3>
 					<div class="text-container">
 						<p class="py-6">
-							A 6'3" right-handed pitcher from Jacksonville, Florida. With an 89 mph fastball, a 4.04
-							GPA, and a 31 on my ACT.
+							A 6'3" right-handed pitcher from Jacksonville, Florida. With an 89 mph fastball, a
+							4.04 GPA, and a 31 on my ACT.
 							<br />
 							<br />
 							"I'm excited about the possibility of contributing to your program both on the field and

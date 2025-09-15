@@ -37,7 +37,7 @@
 				er: '5',
 				bb: '10'
 			},
-			fastballVelo: '87-89 mph',
+			fastballVelo: '87-91 mph',
 			sliderVelo: '72-75 mph',
 			changeupVelo: '77-80 mph'
 		}

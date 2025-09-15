@@ -1,7 +1,6 @@
 <script>
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
-	import { page } from '$app/stores';
 	injectAnalytics();
 	injectSpeedInsights();
 </script>
