@@ -1,28 +1,5 @@
 <script lang="ts">
-	import { onMount, afterUpdate } from 'svelte';
-	export let tweetUrl: string = 'https://x.com/jude_mcdonald7/status/1957172760658026578';
-	const stonyBrookBaseTwitter = 'https://x.com/StonyBrookBASE';
-	let showSeawolf = true;
 	const seawolfPng = '/images/stony-brook-seawolf.jpg';
-
-	let tweetContainer: HTMLDivElement | null = null;
-
-	function initializeTweetEmbed() {
-		if (typeof window === 'undefined') return;
-		// @ts-ignore - twttr is injected by widgets.js
-		const twttr = (window as any).twttr;
-		if (twttr && twttr.widgets && tweetContainer) {
-			twttr.widgets.load(tweetContainer);
-		}
-	}
-
-	onMount(() => {
-		initializeTweetEmbed();
-	});
-
-	afterUpdate(() => {
-		initializeTweetEmbed();
-	});
 </script>
 
 <section class="section announcement">
@@ -30,26 +7,19 @@
 		<div class="text">
 			<h2>Exciting news!</h2>
 			<p>
-				I have committed to <strong>Stony Brook University</strong> for the 2026–2027 school year.
+				Over the last two years, I focused on finding the right fit — competing hard, developing my
+				arsenal, and earning the opportunity to pitch at the next level.
 			</p>
-
-			<div class="links">
-				<a href={stonyBrookBaseTwitter} target="_blank" rel="noopener noreferrer" class="link">
-					Visit Stony Brook Baseball on X
-				</a>
-			</div>
+			<p>
+				I'm excited to share that I've committed to <strong>Stony Brook University</strong> (D1) for
+				the 2026–2027 school year. Thank you to my family, teammates, and coaches at CBU and ESJ for
+				the support and belief.
+			</p>
+			<p class="cta">Go Seawolves — looking forward to the next four years!</p>
 		</div>
 
-		{#if showSeawolf}
-			<div class="logo" aria-hidden="true">
-				<img src={seawolfPng} alt="" on:error={() => (showSeawolf = false)} />
-			</div>
-		{/if}
-
-		<div class="tweet" bind:this={tweetContainer}>
-			<blockquote class="twitter-tweet" data-theme="light">
-				<a href={tweetUrl}><span class="sr-only">View Jude's commitment announcement on X</span></a>
-			</blockquote>
+		<div class="media">
+			<img class="seawolf-card" src={seawolfPng} alt="Stony Brook Seawolves mark" />
 		</div>
 	</div>
 </section>
@@ -57,19 +27,16 @@
 <style>
 	.announcement {
 		background: white;
-		padding: 2rem;
+		padding: 1.25rem;
 		border-radius: var(--border-radius);
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		margin: 2rem 0;
+		margin: 1.25rem 0;
 	}
 
 	.announcement-content {
 		display: grid;
-		grid-template-columns: 1fr 280px;
-		grid-template-areas:
-			'text logo'
-			'tweet tweet';
-		gap: 2rem;
+		grid-template-columns: 1.3fr 0.7fr;
+		gap: 1.25rem;
 		align-items: center;
 	}
 
@@ -77,59 +44,33 @@
 		margin: 0 0 0.5rem 0;
 	}
 
-	.links {
-		margin-top: 1rem;
-	}
-
-	.link {
-		color: var(--link);
-		text-decoration: none;
-		font-weight: 500;
-	}
-
-	.link:hover {
+	.cta {
+		margin-top: 0.5rem;
+		font-weight: 600;
 		color: var(--accent);
-		text-decoration: underline;
 	}
 
-	.logo {
-		grid-area: logo;
+	.media {
 		display: flex;
-		align-items: center;
 		justify-content: center;
 	}
 
-	.logo img {
-		width: clamp(180px, 22vw, 280px);
+	.seawolf-card {
+		width: clamp(180px, 28vw, 300px);
 		height: auto;
-		aspect-ratio: 1 / 1;
 		border-radius: 8px;
-	}
-
-	.tweet {
-		grid-area: tweet;
-		overflow: hidden;
-	}
-
-	.sr-only {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		padding: 0;
-		margin: -1px;
-		overflow: hidden;
-		clip: rect(0, 0, 0, 0);
-		white-space: nowrap;
-		border: 0;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 	}
 
 	@media (max-width: 768px) {
 		.announcement-content {
 			grid-template-columns: 1fr;
-			grid-template-areas:
-				'text'
-				'logo'
-				'tweet';
+			gap: 1rem;
+		}
+
+		.announcement {
+			padding: 1rem;
+			margin: 1rem 0;
 		}
 	}
 </style>
