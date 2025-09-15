@@ -6,8 +6,10 @@
 				<h1 class="text-5xl font-bold">Jude McDonald</h1>
 				<h2 class="text-2xl font-bold">Baseball - RHP - Class of 2026</h2>
 				<h3 class="text-xl font-bold">
-					<a href="https://www.stonybrook.edu/baseball" target="_blank" rel="noopener noreferrer"
-						>Stony Brook</a
+					<a
+						href="https://stonybrookathletics.com/sports/baseball"
+						target="_blank"
+						rel="noopener noreferrer">Stony Brook</a
 					>
 					Commit,
 					<a
