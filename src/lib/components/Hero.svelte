@@ -30,7 +30,7 @@
 					<h3 class="text-xl font-bold">CBU Scout Team & Episcopal School of Jacksonville</h3>
 					<div class="text-container">
 						<p class="py-6">
-							A 6'3" right-handed pitcher from Jacksonville, Florida. With an 89 mph fastball, a
+							A 6'3" right-handed pitcher from Jacksonville, Florida. With an 91 mph fastball, a
 							4.04 GPA, and a 31 on my ACT.
 							<br />
 							<br />
