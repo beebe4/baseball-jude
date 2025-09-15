@@ -30,7 +30,7 @@
 		<div class="text">
 			<h2>Exciting news!</h2>
 			<p>
-				Jude has committed to <strong>Stony Brook University</strong> for the 2026–2027 school year.
+				I have committed to <strong>Stony Brook University</strong> for the 2026–2027 school year.
 			</p>
 
 			<div class="links">
