@@ -43,6 +43,24 @@
 			event: 'CBU College Camp',
 			location: 'Ft. Myers, FL',
 			url: 'https://x.com/CBU_FL/status/1949883474053390688'
+		},
+		{
+			date: 'September 19-22 2025',
+			event: 'Prospect Select World Invite',
+			location: 'Jupiter, FL',
+			url: 'https://play.ps-baseball.com/public/events/world-invite-jupiter-fl-09-19-2025'
+		},
+		{
+			date: 'October 3-5 2025',
+			event: 'Florida Diamond Club (D1 Showcase - Texas Rangers - North Team)',
+			location: 'TD Ballpark, Dunedin, FL',
+			url: 'http://www.floridadiamondclub.com/'
+		},
+		{
+			date: 'October 9-13 2025',
+			event: '2025 PG WWBA World Championship ("Jupiter")',
+			location: 'Roger Dean Complex, Jupiter, FL',
+			url: 'https://www.perfectgame.org/events/TournamentTeams.aspx?event=120496'
 		}
 	];
 
